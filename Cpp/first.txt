@@ -1,0 +1,2 @@
+https://cplusplus.com/doc/tutorial/
+https://en.cppreference.com/w/

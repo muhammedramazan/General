@@ -1,0 +1,28 @@
+1-) COMMENT
+---- /* comment */	Often known as "C-style" or "multi-line" comments.
+- /** and */ are often used to indicate documentation blocks;
+- C-style comments cannot be nested.
+
+---- // comment	    Often known as "C++-style" or "single-line" comments
+- C++-style comments tell the compiler to ignore all content between // and a new line.
+
+---- Notes
+- Because comments are removed before the preprocessor stage, 
+- a macro cannot be used to form a comment and an unterminated C-style comment doesn't spill over from an #include'd file.
+- Besides commenting out, other mechanisms used for source code exclusion are
+
+2-) ASCII Chart
+- The ASCII chart contains all 128 ASCII decimal (dec), octal (oct), hexadecimal (hex) and character (ch) codes.
+
+3-) Punctutaion
+- { } [?] , [ ] [?] , # [?] , ## [?] , ( ) [?] ,
+- ; [?] , : [?] , ... [?] , ? [?] , :: [?] ,
+- . [?] , .* [?] , -> [?] , ->* [?] ,
+- ~ [?] , ! [?] ,
+- + [?] , - [?] , * [?] , / [?] , % [?] , ^ [?] , & [?] , | [?] , = [?] ,
+- += [?] , -= [?] , *= [?] , /= [?] , %= [?] , ^= [?] , &= [?] , |= [?] , 
+, == [?] , != [?] , < [?] , > [?] , <= [?] , >= [?] ,  <=> [?] ,
+- && [?] , || [?] ,
+- << [?] , >> [?] , <<= [?] , >>= [?] ,
+- ++ [?] , -- [?] ,
+, ',' [?] , 
