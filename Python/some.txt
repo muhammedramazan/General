@@ -1,0 +1,79 @@
+[?] multiple assignment:
+
+[?] değerlerin casting  yapılması  int()
+
+[?] collection
+
+[?] list[str]
+
+[?] dict[str,str]
+
+[?] range(5)
+
+[?] pass
+
+[!] __match_args__ burası anlaşılmadı buraya bir daha bak
+
+[?] end=
+
+[?] documentation string, or docstring.
+
+[+] whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names.
+
+[+] -->In fact, even functions without a return statement do return a value, albeit a rather boring one.
+    -->This value is called None (it’s a built-in name). Writing the value None is normally suppressed by the interpreter if it would be the only value written. You can see it if you really want to using print():
+
+[?] valiable = [] // this is a list definition
+
+[?] variable.append()
+
+[!!!]   -->Important warning: The default value is evaluated only once. 
+        -->This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes. For example, the following function accumulates the arguments passed to it on subsequent calls:
+
+[???]   -->When a final formal parameter of the form **name is present, it receives a dictionary (see Mapping Types — dict) containing all keyword arguments except for those corresponding to a formal parameter.
+        -->This may be combined with a formal parameter of the form *name (described in the next subsection) which receives a tuple containing the positional arguments beyond the formal parameter list. (*name must occur before **name.)
+        -->For example, if we define a function like this:
+[?] position only argument <-- / , keyword only argument * --> 
+
+[+] Arbitrary Argument Lists These arguments will be wrapped up in a tuple  (see Tuples and Sequences)
+
+[???] Tuple
+
+[?] Unpacking Argument Lists
+
+[?] *-operator
+
+[?] Documentation Strings
+
+[?] Function Annotations
+
+[??] variable : str
+
+[--]    -->The square brackets around the i in the method signature denote that the parameter is optional, not that you should type square brackets at that position.
+        -->You will see this notation frequently in the Python Library Reference.
+        -->Optional arguments
+
+[?] class map(Iterator[_S], Generic[_S]):
+
+[???] tuble (x,y) | Pair
+
+[?]     -->zip(*iterables, strict=False)
+        -->Iterate over several iterables in parallel, producing tuples with an item from each one.
+
+[??] [2:4] on list
+
+[???] Sequence Types — list, tuple, range
+
+[???] string
+
+[???] sequence unpacking 
+
+[+++] Python also includes a data type for sets. A set is an unordered collection with no duplicate elements.
+
+[+]  Looping Techniques  items() method.
+
+[+] When looping through a sequence, the position index and corresponding value can be retrieved at the same time using the enumerate() function.
+
+[+] To loop over two or more sequences at the same time, the entries can be paired with the zip() function.
+
+[?=?] Modulun son kısmına bakılmadı Module Chapter 6
