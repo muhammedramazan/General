@@ -26,3 +26,22 @@
 - << [?] , >> [?] , <<= [?] , >>= [?] ,
 - ++ [?] , -- [?] ,
 , ',' [?] , 
+
+4-) Names And Identifiers
+- Identifiers is an arbitrarily long sequence of digits, underscores, lowercase and uppercase Latin letters, and most Unicode characters.
+- The first character must be latin letters (uppercase or lowercase), underscores '_' or any Unicode character
+- The other character can be like first character and can become digits 0-9
+- Identifiers are case-sensitive (lowercase and uppercase letters are distinct), and every character is significant.
+
+---- Indeclarations
+- An identifier can be used to name objects, references, functions, enumerators, types, class members, namespaces, templates, template specializations, parameter packs(since C++11), goto labels, and other entities.
+- the identifiers that are keywords cannot be used for other purposes.
+- the identifiers that are alternative representations for certain operators and punctuators cannot be used for other purposes;
+
+### Kalan Kısma Tekrar Bak
+### ...
+
+5-) Types
+- Objects, references, functions including function template specializations, and expressions have a property called type,
+- which both restricts the operations that are permitted for those entities and provides semantic meaning to the otherwise generic sequences of bits.
+- fundamental types [?] -- compound types[?] 
