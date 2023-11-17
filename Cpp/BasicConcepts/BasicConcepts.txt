@@ -44,4 +44,45 @@
 5-) Types
 - Objects, references, functions including function template specializations, and expressions have a property called type,
 - which both restricts the operations that are permitted for those entities and provides semantic meaning to the otherwise generic sequences of bits.
+-- Type classification
 - fundamental types [?] -- compound types[?] 
+-- Type Naming
+- A name can be declared to refer to a type by means of:
+    - class declaration;
+    - union declaration;
+    - enum declaration;
+    - typedef declaration;
+    - type alias declaration;
+- Types that do not have names often need to be referred to in C++ programs; the syntax for that is known as type-id.
+- The syntax of the type-id that names type T is exactly the syntax of a declaration of a variable or function of type T,
+- with the identifier omitted, except that decl-specifier-seq of the declaration grammar is constrained to type-specifier-seq,
+- and that new types may be defined only if the type-id appears on the right-hand side of a non-template type alias declaration.
+### Buna Birdaha bak  https://en.cppreference.com/w/cpp/language/type#Type_naming
+
+---- Elaborated type specifier [?]
+---- Static type [?]
+- The type of an expression that results from the compile-time analysis of the program is known as the static type of the expression. The static type does not change while the program is executing. [?]
+---- Dynamic type [?]
+- If some glvalue expression refers to a polymorphic object, the type of its most derived object is known as the dynamic type.
+---- Incomplete type [?]
+- https://en.cppreference.com/w/cpp/language/type#Incomplete_type
+### Kalan Kısma Tekrar Bak
+### ...
+
+6-) Fundamental Types
+- Void Type :: Void — type with an empty set of values. It is an incomplete type that cannot be completed (consequently, objects of type void are disallowed).
+            :: There are no arrays of void, nor references to void. However, pointers to void and functions returning type void (procedures in other languages) are permitted. 
+            :: std::nullptr_t (since C++11)
+            :: typedef decltype(nullptr) nullptr_t;
+            :: std::nullptr_t is the type of the null pointer literal, nullptr. It is a distinct type that is not itself a pointer type or a pointer to member type.
+            :: Its values are null pointer constant (see NULL), and may be implicitly converted to any pointer and pointer to member type.
+            :: sizeof(std::nullptr_t) is equal to sizeof(void*).
+---- Data models :: The choices made by each implementation about the sizes of the fundamental types are collectively known as data model. Four data models found wide acceptance: 
+    -- 32 Bit System
+    - LP32 or 2/4/4 (int is 16-bit, long and pointer are 32-bit) -> Win16 API
+    - ILP32 or 4/4/4 (int, long, and pointer are 32-bit) ->  Win32 API , Unix and Unix-like systems (Linux, macOS)
+    -- 64 Bits System
+    - LLP64 or 4/4/8 (int and long are 32-bit, pointer is 64-bit) -> Win32 API (also called the Windows API) with compilation target 64-bit ARM (AArch64) or x86-64 (a.k.a. x64)
+    - LP64 or 4/8/8 (int is 32-bit, long and pointer are 64-bit) -> Unix and Unix-like systems (Linux, macOS)
+    -- Other models are very rare. For example, ILP64 (8/8/8: int, long, and pointer are 64-bit) only appeared in some early 64-bit Unix systems (e.g. UNICOS on Cray).
+
