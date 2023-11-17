@@ -1,0 +1,26 @@
+[?]->anlamadım [!]->kesinlikle bak [-]->eksik anladım [+]->anladım ama not olsun [~]->Merak 
+Bu karakterlerin sayısı önemini belirtir. En falza 3 adet
+Bir öncekini devamı olan satırlar -- ve boşluk oşmadan belirtilir.
+- Bu cümle aşağıdaki
+--satırda devam ediyor
+--- --- --- --- --- --- --- --- --- --- ---
+[+] - Feature off OOP in Python
+     - The class inheritance mechanism allows multiple base classes
+     - a derived class can override any methods of its base class or classes
+     - a method can call the method of a base class with the same name
+    - Objects can contain arbitrary amounts and kinds of data.
+    - As is true for modules, classes partake of the dynamic nature of Python: they are created at runtime, and can be modified further after creation.
+    - Some other class Feature
+     - Normally class members (including the data members) are public (except see below Private Variables), and all member functions are virtual
+     - As in Modula-3, there are no shorthands for referencing the object’s members from its methods:
+     --the method function is declared with an explicit first argument representing the object, which is provided implicitly by the call.
+     -  As in Smalltalk, classes themselves are objects. This provides semantics for importing and renaming. 
+     - Unlike C++ and Modula-3, built-in types can be used as base classes for extension by the user.
+     --Also, like in C++, most built-in operators with special syntax (arithmetic operators, subscripting etc.) can be redefined for class instances.
+
+[~] Modula-3
+
+[?] https://docs.python.org/3/tutorial/classes.html#a-word-about-names-and-objects
+[?] https://docs.python.org/3/tutorial/classes.html#python-scopes-and-namespaces
+[++] Python Scoping -> global , nonlocal
+[?] Binding of variable
