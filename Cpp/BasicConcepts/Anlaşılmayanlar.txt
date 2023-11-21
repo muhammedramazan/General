@@ -1,3 +1,8 @@
 decl-specifier-seq
 type-id
 type-specifier-seq, 
+cv-qualified
+external linkage.
+internal linkage
+static inline 
+inline
