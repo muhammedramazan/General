@@ -1,0 +1,111 @@
+<----> Expression
+- An expression is a  sequence of operators and operands, that specifies a computation
+- Expression evaluation may produce a result (2 + 2) and mey generate side effects (printf("Hi"))
+---- Note : Each C++ expression is characterized by two independent properties: A type and a value category
+
+<---> General
+- Value Category : classify expression by their value ( lvalue, rvalue, glvalue, prvalue, xlvalue)
+- Order of evaluation : of arguments and subexpression the order in which intermediate result obtained
+- Operator
+    |***********************************************************************************************************|    
+    |                                       COMMON OPERATORS                                                    |
+    |  Assignment   |  increment  |  arithmetic  |  logical  |  comprison   |  member access  |      other      |
+    |               |  decrement  |              |           |              |                 |      ----       |
+    |  a = b        |             |  +a          |           |              |                 |  function call  |
+    |  a += b       |     ++a     |  -a          |  !a       |  a == b      |  a[...]         |      a(...)     |
+    |  a -= b       |     --a     |  a + b       |  a && b   |  a != b      |  *a             |      ----       |
+    |  a *= b       |     a++     |  a - b       |  a || b   |  a < b       |  &a             |      comma      |
+    |  a /= b       |     a--     |  a * b       |           |  a > b       |  a->b           |       a, b      |
+    |  a %= b       |             |  a / b       |           |  a <= b      |  a.b            |       ----      |
+    |  a &= b       |             |  a % b       |           |  a >= b      |  a->*b          |   conditional   |
+    |  a |= b       |             |  ~a          |           |  a <=> b     |  a.*b           |    a ? b : c    |
+    |  a ^= b       |             |  a & b       |           |              |                 |                 |
+    |  a <<= b      |             |  a | b       |           |              |                 |                 |
+    |  a >>= b      |             |  a ^ b       |           |              |                 |                 |
+    |               |             |  a << b      |           |              |                 |                 |
+    |               |             |  a >> b      |           |              |                 |                 |
+    |***********************************************************************************************************|---
+    |                                                                                                              |
+    |**************************************************************************************************************|
+    | --- : Special Operators                                                                                      |
+    |                                                                                                              |
+    | --->static_cast :: converts one type to another related type                                                 |
+    |                                                                                                              |
+    | --->dynamic_cast :: converts within inheritance hierarchies                                                  |
+    |                                                                                                              |
+    | --->const_cast :: adds or removes cv-qualifiers                                                              |
+    |                                                                                                              |
+    | --->reinterpret_cast :: converts type to unrelated type                                                      |
+    |                                                                                                              |
+    | --->C-style cast ::  converts one type to another by a mix of static_cast, const_cast, and reinterpret_cast  |
+    |                                                                                                              |
+    | --->new :: creates objects with dynamic storage duration                                                     |
+    |                                                                                                              |
+    | --->delete :: destructs objects previously created by the new expression and releases obtained memory area   |
+    |                                                                                                              |
+    | --->sizeof :: queries : the size of a type                                                                   |
+    |                                                                                                              |
+    | --->sizeof... :: queries : the size of a parameter pack (since C++11)                                        |
+    |                                                                                                              |
+    | --->typeid :: queries : the type information of a type                                                       |
+    |                                                                                                              |
+    | --->noexcept :: checks if an expression can throw an exception (since C++11)                                 |
+    |                                                                                                              |
+    | --->alignof :: queries : alignment requirements of a type (since C++11)                                      |
+    |**************************************************************************************************************| 
+
+- operator precidence [?] : defines the order in which operator are bound to their arguments.
+- alternative representation : are alternative spelling for some operators.
+- operator overloading : make it possible to specify the behavior of the operators with user-defined [?] classes
+- Conversions : 
+    - standard conversions : implict conversion from one type to another
+    - const_cast_conversion
+    - static_cast_conversion
+    - dyanmic_cast_conversion
+    - reinterpret_cast_converison
+    - explicit cast conversions [?] : using C-style cast notation and function-style notation
+    - user-defined converions [?] : makes it possible to specify conversion from user-defined classes
+- Memory allocaiton
+    - new expression : allocates memory dynamically
+    - delete expression : deallocates memory dynamically
+- Other
+    - Constant expression [?]: can be evaluated at compile time and used in compile-time context [???] (template-arguments, array sizes, etc)
+    - sizeof [?]
+    - alignof [?]
+    - typeid [?]
+    - throw-expressin [?]
+
+- Primary_expressions : The operands of any operator may be other expressions or primary expressions (e.g. in 1 + 2 * 3, the operands of operator+ are the subexpression 2 * 3 and the primary expression 1).
+    - Primary expressions are any of the following: 
+                                                    - this
+                                                    - literals (e.g. 2 or "Hello, world")
+                                                    - id-expressions, including
+                                                        - [?]suitably declared unqualified identifiers (e.g. n or cout),
+                                                        - [?]suitably declared qualified identifiers (e.g. std::string::npos), and
+                                                        - [?]identifiers to be declared in declarators
+                                                    - lambda-expressions (since C++11)
+                                                    - [?]fold-expressions (since C++17)
+                                                    - [?]requires-expressions (since C++20)
+    - Any expression in parentheses is also classified as a primary expression: this guarantees that the parentheses have higher precedence than any operator. Parentheses preserve value, type, and value category.
+- Literals :Literals are the tokens of a C++ program that represent constant values embedded in the source code.
+    - integer literals are decimal, octal, hexadecimal or binary numbers of integer type.
+    - character literals are individual characters of type    
+    - floating-point literals are values of type float, double, or long double
+    - string literals are sequences of characters of type   
+    - boolean literals are values of type bool, that is true and false
+    - nullptr is the pointer literal which specifies a null pointer value
+    - user-defined literals are constant values of user-specified type (since C++11)boolean literals are values of type bool, that is true and false
+    - nullptr is the pointer literal which specifies a null pointer value
+    - user-defined literals are constant values of user-specified type (since C++11)boolean literals are values of type bool, that is true and false
+    - nullptr is the pointer literal which specifies a null pointer value
+    - user-defined literals are constant values of user-specified type (since C++11)
+- Full-expressions[???]
+    - A constituent(kurucu) expression is defined as follows:
+    ### Devamı var burdan devam et
+    https://en.cppreference.com/w/cpp/language/expressions#Full-expressions
+
+
+
+
+
+

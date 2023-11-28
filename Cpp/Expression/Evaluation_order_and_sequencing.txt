@@ -1,0 +1,6 @@
+<----> Evaluation Order And Sequencing  
+
+<---> Order Of Evaluation
+    -
+    ### 
+    https://en.cppreference.com/w/cpp/language/eval_order   
