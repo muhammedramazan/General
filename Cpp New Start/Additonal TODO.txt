@@ -1,0 +1,20 @@
+[ ] if
+[ ] ??? attributes https://en.cppreference.com/w/cpp/language/attributes
+[ ] ??? Expression 1 https://en.cppreference.com/w/cpp/language/statements
+[ ] ??? Simple Decleration https://en.cppreference.com/w/cpp/language/declarations
+[ ] ??? Structured Binding https://en.cppreference.com/w/cpp/language/structured_binding
+[ ] ??? Alias Decleration https://en.cppreference.com/w/cpp/language/type_alias
+[ ] ??? Expression 2  https://en.cppreference.com/w/cpp/language/expressions
+[ ] ??? Contextual Conversios https://en.cppreference.com/w/cpp/language/implicit_conversion#Contextual_conversions
+[ ] ??? Implicit Convention https://en.cppreference.com/w/cpp/language/implicit_conversion
+[ ] ??? İnitialization https://en.cppreference.com/w/cpp/language/initialization
+[ ] ??? Manifestly Constant Evaluated Expression https://en.cppreference.com/w/cpp/language/constant_expression#Manifestly_constant-evaluated_expressions
+[ ] ??? Definitions and ODR (One Definition Rule) https://en.cppreference.com/w/cpp/language/definition
+[ ] ??? Metaprogramming https://en.cppreference.com/w/cpp/meta
+
+
+[ ] switch
+[ ] ??? integral promotions https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion
+[ ] ??? Contextual conversions https://en.cppreference.com/w/cpp/language/implicit_conversion
+[ ] ??? Implicit Conversions https://en.cppreference.com/w/cpp/language/implicit_conversion
+

@@ -7,6 +7,8 @@ attr (optional) if constexpr(optional) ( init-statement (optional) condition
 attr (optional) if !(optional) consteval compound-statement	                                                          (3)	(since C++23)
 attr (optional) if !(optional) consteval compound-statement else statement	                                          (4)	(since C++23)
 
+-- if, else if and else are clause 
+
 
 [x]   1) if statement without an else branch
 [x]   2) if statement with an else branch
@@ -16,9 +18,9 @@ attr (optional) if !(optional) consteval compound-statement else statement	   
 [ ]     - attr	->	(since C++11) any number of attributes
 [ ]     - constexpr	->	(since C++17) if present, the statement becomes a constexpr if statement
 [ ]     - init-statemen -> (since C++17) either
-            - an expression statement (which may be a null statement ";")
-            - a simple declaration, typically a declaration of a variable with initializer, but it may declare arbitrary many variables or be a structured binding declaration 
-            - an alias declaration (since C++23)
+[ ]         - an expression statement (which may be a null statement ";")
+[ ]         - a simple declaration, typically a declaration of a variable with initializer, but it may declare arbitrary many variables or be a structured binding declaration 
+[ ]         - an alias declaration (since C++23)
                 -       Note that any init-statement must end with a semicolon ;
                     --  , which is why it is often described informally as an expression or a declaration followed by a semicolon.
         - condition	-	one of
@@ -33,5 +35,43 @@ attr (optional) if !(optional) consteval compound-statement else statement	   
         - is not evaluated in a manifestly constant-evaluated context, if ! is not preceding consteval
         - is evaluated in a manifestly constant-evaluated context, if ! is preceding consteval
 
+[x] <--> Explanation
+... I Know This Part
 
-[ ] attributes https://en.cppreference.com/w/cpp/language/attributes
+[ ] <--> If statement with initializer
+
+- Note: Discared statement part is not evaluated some situation
+
+- If init-statement is used, the if statement is equivalent to
+--  attr (optional) if constexpr(optional) ( init-statement (optional) condition ) statement-true
+--      = 
+--  {
+--  init_statement
+--  attr (optional) if constexpr(optional) ( condition )
+--  statement-true
+--  }
+
+-   Except that names declared by the init-statement (if init-statement is a declaration) and 
+    names declared by condition (if condition is a declaration) are in the same scope, which is also the scope of both statements.
+
+[ ] <--> Constexpr if
+
+[x]- The statement that begins with if constexpr is known as the constexpr if statement.
+
+[ ]-    In a constexpr if statement, the value of condition must be a contextually converted constant expression of type bool(until C++23)an expression contextually converted to bool,
+        where the conversion is a constant expression(since C++23). If the value is true, then statement-false is discarded (if present), otherwise, statement-true is discarded.
+
+[ ]- The return statements in a discarded statement do not participate in function return type deduction:
+
+[ ]- Note: an example where the condition remains value-dependent after instantiation is a nested template, e.g.
+
+[ ]- Note: the discarded statement cannot be ill-formed for every possible specialization
+
+[ ]- The common workaround before the implementation of CWG2518 for such a catch-all statement is a type-dependent expression that is always false:
+
+[ ]-    Labels (goto targets, case labels, and default:) appearing in a substatement of a constexpr if can only be referenced (by switch or goto) in the same substatement.
+        Note: a typedef declaration or alias declaration(since C++23) can be used as the init-statement of a constexpr if statement to reduce the scope of the type alias.  
+
+<--> Consteval if
+
+[ ] Buraya Daha Sonra Bak https://en.cppreference.com/w/cpp/language/if#Consteval_if
