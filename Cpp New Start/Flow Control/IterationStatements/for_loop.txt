@@ -1,0 +1,10 @@
+<----> For Loop
+
+--> Executes init-statement once, then executes statement and iteration-expression repeatedly,
+    until the value of condition becomes false. The test takes place before each iteration.
+
+<--->Syntax
+--> formal syntax:		
+    attr (optional) for ( init-statement condition ﻿(optional) ; iteration-expression (optional) ) statement		
+--> informal syntax:		
+    attr (optional) for ( declaration-or-expression ﻿(optional) ; condition (optional) ; expression (optional) ) statement		

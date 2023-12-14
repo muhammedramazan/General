@@ -17,4 +17,6 @@
 [ ] ??? integral promotions https://en.cppreference.com/w/cpp/language/implicit_conversion#Integral_promotion
 [ ] ??? Contextual conversions https://en.cppreference.com/w/cpp/language/implicit_conversion
 [ ] ??? Implicit Conversions https://en.cppreference.com/w/cpp/language/implicit_conversion
+[ ] ??? conversions/promotions
+[ ] ??? [[fallthrough]] 
 

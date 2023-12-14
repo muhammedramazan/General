@@ -1,7 +1,7 @@
 <----> Switch Statement
 - Transfers control to one of several statements, depending on the value of a condition.
 <---> Syntax
-- attr (optional) switch ( init-statement ﻿(optional) condition ) statement		
+--> attr (optional) switch ( init-statement (optional) condition ) statement		
 
 [ ] attr	-	(since C++11) any number of attributes
 
@@ -20,8 +20,8 @@
 
 [ ] - statement	-	any statement (typically a compound statement). case: and default: labels are permitted in statement and break; statement has special meaning.
 
-[ ] - attr (optional) case constant-expression : statement	(1)	
-[ ] - attr (optional) default : statement	(2)	
+--> attr (optional) case constant-expression : statement	(1)	
+--> attr (optional) default : statement	(2)	
 [ ]- constant-expression - 	a constant expression of the same type as the type of condition after conversions and integral promotions
 
 <---> Explanation
@@ -36,7 +36,8 @@
 
 - The break statement, when encountered in statement exits the switch statement:
 
-- Compilers may issue warnings on fallthrough (reaching the next case label without a break) unless the attribute [[fallthrough]]  -!!!-  appears immediately before the case label to indicate that the fallthrough is intentional.
+- Compilers may issue warnings on fallthrough (reaching the next case label without a break) unless the attribute [[fallthrough]]  -!!!-
+  appears immediately before the case label to indicate that the fallthrough is intentional.
 
 -   Except that names declared by the init-statement (if init-statement is a declaration) and
     names declared by condition (if condition is a declaration) are in the same scope, which is also the scope of statement.
