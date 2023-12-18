@@ -1,0 +1,35 @@
+[ ] ??? Translation Phase : translation_phaseshttps://en.cppreference.com/w/cpp/language/translation_phases
+[ ] ??? Preprocessor : https://en.cppreference.com/w/cpp/preprocessor
+[ ] ??? Keywords : https://en.cppreference.com/w/cpp/keyword
+[ ] ??? Comments : https://en.cppreference.com/w/cpp/comment
+[ ] ??? Escape Sequence : https://en.cppreference.com/w/cpp/language/escape
+[ ] 1 ??? If Statement : https://en.cppreference.com/w/cpp/language/if
+[ ] --> 
+[ ] --> 
+[ ] --> 
+[ ] 1 ??? Switch Statement : https://en.cppreference.com/w/cpp/language/switch
+[ ] --> 
+[ ] --> 
+[ ] --> 
+[ ] 1 ??? For : https://en.cppreference.com/w/cpp/language/for
+[ ] --> 
+[ ] --> 
+[ ] --> 
+[ ] 1 ??? While : https://en.cppreference.com/w/cpp/language/while
+[ ] --> 
+[ ] --> 
+[ ] --> 
+[ ] 1 ??? Range For  : https://en.cppreference.com/w/cpp/language/range-for
+[ ] --> 
+[ ] --> 
+[ ] --> 
+[ ] 1 ??? do while : https://en.cppreference.com/w/cpp/language/do
+[ ] 1 ??? continue : https://en.cppreference.com/w/cpp/language/continue
+[ ] 1 ??? break : https://en.cppreference.com/w/cpp/language/break
+[ ] 1 ??? goto : https://en.cppreference.com/w/cpp/language/goto
+[ ] 1 ??? return : https://en.cppreference.com/w/cpp/language/return
+[ ] 1 ??? Funtions : https://en.cppreference.com/w/cpp/language/functions
+[ ] 1 ??? --> Funtions call operator : https://en.cppreference.com/w/cpp/language/operator_other#Built-in_function_call_operator 
+[ ] 1 ??? --> Default : https://en.cppreference.com/w/cpp/language/default_arguments  
+[ ] 1 ??? --> ... :  
+[ ] 1 ??? Function Declaration : https://en.cppreference.com/w/cpp/language/function
