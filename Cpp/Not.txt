@@ -33,3 +33,6 @@
 [ ] 1 ??? --> Default : https://en.cppreference.com/w/cpp/language/default_arguments  
 [ ] 1 ??? --> ... :  
 [ ] 1 ??? Function Declaration : https://en.cppreference.com/w/cpp/language/function
+[ ] 1 ??? --> volatile-qualified  :
+[ ] 1 ??? --> ... :
+[ ] 1 ??? --> ... :
