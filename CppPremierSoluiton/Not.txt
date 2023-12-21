@@ -1,0 +1,63 @@
+21/12/2023
+<----> Chapter1
+- write, compile, and execute program.
+<---> Writing Simple program
+-  Every C++ program contains one or more functions, one of which must be named main. The operating system runs a C++ program by calling main.
+-  A function definition has four elements: a return type, a function name, a (possibly empty) parameter list enclosed in parentheses, and a function body.
+-  built-in type is defined in the language defines.
+-  The final part of a function definition, the function body, is a block of statements starting with an open curly brace and ending with a close curly
+-  On most systems, the value returned from main is a status indicator. A return value of 0 indicates success. 
+  A nonzero return has a meaning that is defined by the system. Ordinarily a nonzero return indicates what kind of error occurred.
+-  $ is the system prompt
+-  The “.” followed by a backslash indicates that the file is in the current directory.
+-  propriate echo command.
+   On UNIX systems, we obtain the status by writing
+  .  $ echo $?
+   To see the status on a Windows system, we write
+  .  $ echo %ERRORLEVEL%
+-  The most common compilers are the GNU compiler and the Microsoft Visual Studio compilers.
+-  Compilers usually include options to generate warnings about problematic constructs. It is usually a good idea to use these options. Our preference is to use -Wall
+  with the GNU compiler, and to use /W4 with the Microsoft compilers.
+   For further information consult your compiler’s user’s guide.
+- A stream is a sequence of characters read from or written to an IO device. The term stream is intended to suggest that the characters are generated, or consumed, sequentially over time.
+- The library defines four IO objects. cin, cout, cerr, and clog
+- The name inside angle brackets (iostream in t is case) refers to a header. Every program that uses a library facility must  nclude its associated header. 
+  The #include directiveSection 1.2 A First Look at Input/Output must be written on a single l ne—the name of the header and the #include must appear on the same line. 
+  In g neral, #include directives must appear outside any function. Typically, we p t all the #include directives for a program at the beginning of the source file.  
+- In C++ an expression yields a result and is composed of one or more operands and (usually) an operator.
+- quotation marks
+- angle brackets
+- it is a special value called a manipulator.
+- Writing endl has the effect of ending the current line and flushing the buffer associated with that device. 
+  Flushing the buffer ensures that all the output the program has generated so far is actually written to the output stream, 
+  rather than sitting in memory waiting to be written. 
+- Namespaces allow us to Getting Started avoid inadvertent collisions between the names we define and uses of those same names inside a library. 
+  All the names defined by the standard library are in the std namespace. 
+- the scope operator (the :: operator)
+- int v1 = 0, v2 = 0;
+- variables v1, v2 ...
+- variables as type int  (built-in type)
+- We also initialize them to 0.
+- When we initialize a variable, we give it the indicated value at the same time as the variable is created.
+- output operator (the « operator)
+
+- Before our programs get much more complicated, we should see how C++ handles comments. Comments help the human readers of our programs. 
+  They are typically used to summarize an algorithm, identify the purpose of a variable, or clarify an otherwise obscure segment of code. 
+  The compiler ignores comments, so they have no effect on the program’s behavior or performance. Although the compiler ignores comments, 
+  readers of our code do not. Programmers tend to believe comments even when other parts of the system documentation are out of date.
+  An incorrect comment is worse than no comment at all because it may mislead the reader. When you change your code, be sure to update the comments, too!
+
+- There are two kinds of comments in C++: single-line and paired. A single-line comment starts with a double slash (//) and ends with a newline. 
+  Everything to the right of the slashes on the current line is ignored by the compiler. A comment of this kind can contain any text, including additional double slashes. 
+  The other kind of comment uses two delimiters (/* and */) that are inherited from C. Such comments begin with a /* and end with the next */. 
+  These com- ments can include anything that is not a */, including newlines. The compiler treats everything that falls between the /* and */ as part of the comment. 
+
+- asterisk *
+
+- Comment Pairs Do Not Nest A comment that begins with /* ends with the next */.  As a result, one comment pair cannot appear inside another. 
+  The compiler error messages that result from this kind of mistake can be mysterious and confusing. 
+
+- We often need to comment out a block of code during debugging. Because that code might contain nested comment pairs, 
+ the best way to comment a block of code is to insert single-line comments at the beginning of each line in the section we want to ignore: 
+- Statements normally execute sequentially
+- compound assignment operator
