@@ -1,0 +1,4 @@
+[ ] MACHINE -LEVEL REPRESENTATION OF THE BUILT- IN TYPES
+[ ] Signed Unsigned
+[ ] Although there are three character types, there are only two representations: signed and unsigned. The (plain) char type uses one of these representations. 
+    Which of the other two character representations is equivalent to char depends on the compiler. 

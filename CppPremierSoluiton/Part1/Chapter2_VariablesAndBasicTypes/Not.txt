@@ -1,0 +1,14 @@
+- Arithmetic types and a special type named void.
++  The arithmetic types represent characters, integers, boolean values, and floating-point numbers.
++  The void type has no associated values and can be used in only a few circumstances, most commonly as the return type for functions that do not return a value.
+
+<Arithmetic Types>
+- The arithmetic types are divided into two categories: integral types (which include character and boolean types) and floating-point types.
+
+<Signed Unsigned>
+- Except for bool and the extended character types, 
+  the integral types may be signed or unsigned. 
+  A signed type represents negative or positive numbers (including zero); an unsigned type represents only values greater than or equal to zero. 
+- The types int, short, long, and long long are all signed.
+- Unlike the other integer types, there are three distinct basic character types: char, signed char, and unsigned char.
+- In particular, char is not the same type as signed char.
