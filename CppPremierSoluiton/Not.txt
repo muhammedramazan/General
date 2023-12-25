@@ -61,3 +61,23 @@
  the best way to comment a block of code is to insert single-line comments at the beginning of each line in the section we want to ignore: 
 - Statements normally execute sequentially
 - compound assignment operator
+<-> For
+- Each for statement has two parts: a header and a body. The header controls how often the body is executed. 
+  The header itself consists of three parts: an init- statement, a condition, and an expression. 
+
+- for (int val = 1; val <= 10; ++val)
+    sum += val;
+- The init-statement : int val = 1 ; defines an int object named val and gives it an initial value of 1
+  The variable val exists only inside the for; it is not possible to use val after this loop terminates. 
+  The init-statement is executed only once, on entry to the for. 
+
+- The condition : val <= 10 ; The condition is tested each time through the loop.
+
+-The expression is executed after the for body. Here, the expression : ++val 
+
+<-> Reading an Unknown Number of Inputs
+- Read until end-of-file, calculating a running total of all values read
+
+- It is also a good idea to recompile the code after each fix—or after making at most a small number of obvious fixes. This cycle is known as edit-compile-debug.
+
+- 1.4.4

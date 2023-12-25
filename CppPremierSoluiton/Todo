@@ -13,3 +13,6 @@
 [ ] left/right hand operator/operand
 [ ] Page 7 warning
 [ ] pre/post ++/-- operator overloading
+[ ] Reading an Unknown Number of Inputs
+    read until end-of-file, calculating a running total of all values read
+[ ] page 
