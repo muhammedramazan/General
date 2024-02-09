@@ -1,14 +1,14 @@
 #include <iostream>
 #include <vector>
-#include <string>
+#include <iostream>
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    vector<string> v1;
-    string input;
+    vector<int> v1;
+    int input;
     while (cin >> input)
         v1.push_back(input);
-    for(const string  i : v1)
+    for(const int  i : v1)
         cout << i << " ";
     cout <<endl;
     return 0;
